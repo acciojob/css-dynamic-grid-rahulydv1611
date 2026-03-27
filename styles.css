@@ -28,7 +28,27 @@ body {
   width: 200px; /* Matches the column width */
   border-radius: 5px;
   font-size: 40px;
-  
+  /* Grid container */
+.grid-container {
+    display: flex;              /* use flexbox */
+    flex-wrap: wrap;            /* move items to next row */
+    justify-content: center;    /* center horizontally */
+    align-items: center;        /* center vertically */
+    gap: 10px;                  /* spacing between cards */
+}
+
+/* Grid items */
+.grid-item {
+    background-color: lightgray;
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    font-size: 40px;
+
+    display: flex;              /* center content inside card */
+    justify-content: center;
+    align-items: center;
+}
   /* Flexbox to center the number inside the card */
   display: flex;
   justify-content: center;
