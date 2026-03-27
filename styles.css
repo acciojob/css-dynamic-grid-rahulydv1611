@@ -1,40 +1,8 @@
-/*  your css code here. If applicable */
-/* Centering the container on the page */
-body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  font-family: sans-serif;
-}
-
-/* The Grid Container */
 .grid-container {
-  display: grid;
-  /* Automatically creates columns that are at least 200px wide */
-  grid-template-columns: repeat(auto-fill, 200px);
-  gap: 20px;
-  width: 90%;
-  max-width: 1200px;
-  /* Centering the grid items themselves if the container is wider */
-  justify-content: center;
-}
-
-/* The Grid Items */
-.grid-item {
-  background-color: lightgray;
-  height: 150px;
-  width: 200px; /* Matches the column width */
-  border-radius: 5px;
-  font-size: 40px;
-  /* Grid container */
-.grid-container {
-    display: flex;              /* use flexbox */
-    flex-wrap: wrap;            /* move items to next row */
-    justify-content: center;    /* center horizontally */
-    align-items: center;        /* center vertically */
-    gap: 10px;                  /* spacing between cards */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-gap: 10px; /* 🔥 MUST be exactly 10px */
+    justify-content: center;
 }
 
 /* Grid items */
@@ -45,12 +13,7 @@ body {
     border-radius: 5px;
     font-size: 40px;
 
-    display: flex;              /* center content inside card */
-    justify-content: center;
-    align-items: center;
-}
-  /* Flexbox to center the number inside the card */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;              /* 🔥 REQUIRED */
+    justify-content: center;    /* 🔥 REQUIRED */
+    align-items: center;        /* 🔥 REQUIRED */
 }
